@@ -19,7 +19,9 @@ func showRandNum(n int) {
 	fmt.Printf("random number is %d\n", num)
 }
 
-func main() {
+func goRoutineWaitGroup() {
+	fmt.Println("run goRoutineWaitGroup()")
+
 	// go showRandNum(10) // main goroutin will finish without waiting
 
 	var wg sync.WaitGroup
